@@ -1,24 +1,17 @@
-import logo from '../public/logo192.png';
 import './App.css';
+import './components/navbar/navBar.css'
+import { NavBar } from './components/navbar/NavBar.jsx';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <h1>Skate Store Adrian Miranda</h1>
+        <NavBar />
       </header>
+      <body>
+      {/* al parecer se debe trabajar pensando en que es la estructura base de index.html */}
+      </body>
     </div>
   );
 }

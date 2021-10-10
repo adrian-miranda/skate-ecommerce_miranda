@@ -1,0 +1,39 @@
+.NavBar{
+    font-size: 1em;
+    width: 100vw;
+    background-color: purple;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.NavBar > a > img{
+    display: flex;
+    width: 70px;
+    padding: 20px;
+    margin: 10px 0 5px 0;
+    background-color: aqua;
+    border-radius: 50%;
+    border: solid 5px red;
+}
+
+.NavBar > h1{
+    display: flex;
+    font-size: 1.5em;
+}
+.NavBar > ul{
+    list-style: none;
+    background-color: purple;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.NavBar > ul > li{
+    margin: 0 0.5vw 0 0.5vw;
+    
+}
+.NavBar > ul > li > a{
+    text-decoration: none;
+    color: aqua;
+}
