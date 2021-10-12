@@ -1,5 +1,6 @@
 // los componentes comienzan con mayuscula , el archivo con minuscula y son .jsx o js
 import './navBar.css'
+import carrito from '../carrito/carrito'
 import logoTienda from '../img/skate.png'
 export const NavBar = () => {
     return(
