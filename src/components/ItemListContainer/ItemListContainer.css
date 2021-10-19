@@ -1,4 +1,9 @@
-.catalogo{
-    background-color: yellowgreen;
-    
+.tarjetas{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+    /* width: '18rem'  */
 }
