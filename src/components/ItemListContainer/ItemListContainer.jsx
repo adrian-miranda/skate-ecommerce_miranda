@@ -11,11 +11,6 @@ export const ItemListContainer = (props) => {
                         <Cards />
                         <Cards />
                         <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />
-                        <Cards />
                     </Col>
                 </Row>
             </Container>
