@@ -10,7 +10,8 @@ export const ItemListContainer = () => {
                     <Col className='tarjetas'>
                         <Cards stock={6}/>
                         <Cards />
-                        <Cards />
+                        <Cards stock={1}/>
+                        <Cards stock={0}/>
                     </Col>
                 </Row>
             </Container>

@@ -11,16 +11,13 @@ import {ItemListContainer} from './components/ItemListContainer/ItemListContaine
 function App() {
   return (
     <div className="App">
-      
       <header className="App-header">
         <NavBar />
         <ItemListContainer/>
-        {/* const [inicial ,setInicial] = useState('hola') */}
       </header>
     </div>
   );
 }
-
 export default App;
 
 // Proviene de manifesto.json que no soporta comentarios
