@@ -1,7 +1,7 @@
 import {Card} from 'react-bootstrap'
 import { ItemCount } from '../ItemCount/ItemCount'
-import './Card.css'
-export const Cards = ({stock}) =>{
+import './Item.css'
+export const Item = ({stock}) =>{
     return(
             <>
                 <Card className="col-md-10 col-lg-3 tarjeta">
