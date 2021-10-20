@@ -28,10 +28,13 @@ export const ItemCount = ({stock = 0 , initial = 1}) =>{
                 <Row>
                     <Col >
                         <Stack direction="horizontal" gap={3} className="botonera">
+                            <div className="contador">
                             <button onClick={restar}>-1</button>
-                            <p>{count}</p>
+                            <p className="numero">{count}</p>
                             <button onClick={agregar}>+1</button>
+                            </div>
                             <button >Agregar al carrito</button>
+                            <p>Stock disponible {stock}</p>
                         </Stack>
                     </Col>
                 </Row>

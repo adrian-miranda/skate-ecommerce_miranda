@@ -1,8 +1,17 @@
 .botonera{
     display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
 	align-content: stretch;
+}
+
+.contador{
+	display: flex;
+	flex-direction: row;
+}
+
+.numero{
+	margin: 0 30px 0 30px;
 }
