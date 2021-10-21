@@ -1,6 +1,7 @@
 import './ItemListContainer.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Item } from '../Item/Item';
+import { ItemList } from '../ItemList/ItemList';
+
 
 export const ItemListContainer = () => {
     return(
@@ -8,10 +9,7 @@ export const ItemListContainer = () => {
             <Container fluid>
                 <Row>
                     <Col className='tarjetas'>
-                        <Item stock={6}/>
-                        <Item />
-                        <Item stock={1}/>
-                        <Item stock={0}/>
+                    <ItemList />
                     </Col>
                 </Row>
             </Container>

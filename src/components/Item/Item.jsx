@@ -11,6 +11,9 @@ export const Item = ({stock}) =>{
                     <Card.Text>Descripcion del articulo
                     </Card.Text>
                         <ItemCount stock={stock}/>
+                        <button>
+                            <a href="{#}">Ver Detalle del producto</a>
+                        </button>
                     </Card.Body>
                 </Card>
             </>
