@@ -1,6 +1,7 @@
 import {Card} from 'react-bootstrap'
-import { ItemCount } from '../ItemCount/ItemCount'
 import './Item.css'
+// import { ItemCount } from '../ItemCount/ItemCount'
+
 export const Item = ({stock , id , title , price , description , pictureUrl}) =>{
     return(
             <>
@@ -11,10 +12,11 @@ export const Item = ({stock , id , title , price , description , pictureUrl}) =>
                     <Card.Text>Descripcion : {description}</Card.Text>
                     <Card.Img variant="top" src={pictureUrl} />
                     <Card.Body>
-                    <ItemCount stock={stock}/>
+                    {/* <ItemCount stock={stock}/> */}
                     <button>
                         <a href="{#}">Ver Detalle del producto</a>
                     </button>
+                    <Card.Footer>Stock Disponible: {stock}</Card.Footer>
                     </Card.Body>
                 </Card>
             </>
