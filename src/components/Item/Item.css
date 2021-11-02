@@ -1,4 +1,9 @@
 .tarjeta{
     background-color: purple;
     margin: 15px;
+
+}
+
+.imagen{
+    height: 55vh;
 }

@@ -10,7 +10,7 @@ export const Item = ({stock , id , title , price , description , pictureUrl}) =>
                     <Card.Title>Titulo Producto : {title}</Card.Title>
                     <Card.Text>Precio Producto : ${price}</Card.Text>
                     <Card.Text>Descripcion : {description}</Card.Text>
-                    <Card.Img variant="top" src={pictureUrl} />
+                    <Card.Img variant="top" src={pictureUrl} alt="aca va la foto" className="imagen"/>
                     <Card.Body>
                     {/* <ItemCount stock={stock}/> */}
                     <button>
