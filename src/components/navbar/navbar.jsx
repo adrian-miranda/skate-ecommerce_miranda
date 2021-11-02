@@ -1,6 +1,6 @@
 // los componentes comienzan con mayuscula , el archivo con minuscula y son .jsx o js
 import './navbar.css'
-import logoTienda from '../img/skate.png' //Cuando se importa una imagen no lleva llaves
+import logoTienda from '../../img/skate.png' //Cuando se importa una imagen no lleva llaves
 import {CartWidget} from '../CartWidget/CartWidget.jsx' // cuando se importa una funcion o componente se coloca entre llaves
 export const NavBar = () => {
     return(

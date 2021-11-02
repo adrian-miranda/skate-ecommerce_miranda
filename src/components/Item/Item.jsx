@@ -1,8 +1,10 @@
 import {Card} from 'react-bootstrap'
 import './Item.css'
 // import { ItemCount } from '../ItemCount/ItemCount'
+// import { ItemDetailContainer } from '../ItemDetailContainer/ItemDetailContainer'
 
 export const Item = ({stock , id , title , price , description , pictureUrl}) =>{
+    // const direccion = `/detalle/${id}`
     return(
             <>
                 <Card className="col-md-10 col-lg-3 tarjeta">
@@ -14,7 +16,9 @@ export const Item = ({stock , id , title , price , description , pictureUrl}) =>
                     <Card.Body>
                     {/* <ItemCount stock={stock}/> */}
                     <button>
-                        <a href="{#}">Ver Detalle del producto</a>
+                        <a href="{#}">Ver detalle de producto</a>
+                        {/* <a href={<ItemDetailContainer />}>Ver Detalle del producto</a> */}
+                        {/* <a href={direccion}>Ver Detalle del producto</a> */}
                     </button>
                     <Card.Footer>Stock Disponible: {stock}</Card.Footer>
                     </Card.Body>

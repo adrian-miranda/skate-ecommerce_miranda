@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { ItemList } from '../ItemList/ItemList';
 import { useState , useEffect } from 'react';
 import Productos from '../../Productos.json'
-// import { Item } from '../Item/Item';
 
 
 export const ItemListContainer = () => {

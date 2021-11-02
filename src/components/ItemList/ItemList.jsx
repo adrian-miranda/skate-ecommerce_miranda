@@ -1,10 +1,7 @@
 import './ItemList.css';
 import { Item } from '../Item/Item';
-// import Productos from '../../Productos.json'
-// import { useState , useEffect } from 'react';
 
 export const ItemList = ({productos}) =>{
-    
     return(
         <>
         {productos.length ? productos.map((producto) => (
@@ -13,4 +10,4 @@ export const ItemList = ({productos}) =>{
             </>
             )
         }
-// console.log(Productos)
+        // console.log(Productos)
