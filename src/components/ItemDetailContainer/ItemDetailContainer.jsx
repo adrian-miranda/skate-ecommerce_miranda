@@ -9,6 +9,7 @@ export const ItemDetailContainer = ()=>{
     //     description : "Aca va la descripcion del producto",
     //     imagen : "https://m.media-amazon.com/images/I/61VX2hb1l5L._AC_SY741_.jpg"
     // }
+    // console.log(productoPrueba)
     const [detailProducto , setDetailProducto] = useState([])
     const getItem = (data) =>
     new Promise((resolve , reject)=>{
@@ -27,10 +28,12 @@ export const ItemDetailContainer = ()=>{
         .catch((error)=> console.log(error))
     } , [])
 
-    const filtrado = detailProducto.filter(filtro => filtro.id === 3).map((filtro) => filtro)
+    const filtrado = detailProducto.filter((filtro) => filtro.id === 3).map((filtro) => filtro)
     console.log(filtrado)
     return(
-        <><ItemDetail productoPrueba={filtrado} /></>
+        <>
+        <ItemDetail  filtrado={filtrado} />
+        </>
     )
 }
 
