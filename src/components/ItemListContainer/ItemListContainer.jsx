@@ -4,11 +4,8 @@ import { ItemList } from '../ItemList/ItemList';
 import { useState , useEffect } from 'react';
 import Productos from '../../Productos.json'
 
-
 export const ItemListContainer = () => {
-    
     const [productos , setProductos] = useState([]);
-    
     const cargaCatalogo = (data) => 
     new Promise((resolve , reject) =>{
         setTimeout(() =>{
