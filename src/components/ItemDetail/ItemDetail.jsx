@@ -1,17 +1,17 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 export const ItemDetail = ({filtrado})=>{
+    const {id , title, description , price , stock , pictureUrl} = filtrado
     return(
         <>
             <Container>
                 <Row>
                     <Col>
                         <Card className="tarjeta">
-                            {/* <Card.Text>Nombre : {filtrado.id}</Card.Text> */}
-                            {/* <Card.Footer>Id: {filtrado.title}</Card.Footer> */}
-                            <Card.Header>Descripcion: {filtrado.description} la descripcion</Card.Header>
-                            <Card.Img></Card.Img>
-                            <img src={filtrado.pictureUrl} alt="aca va la foto" />
+                            <Card.Footer>Id: {filtrado.id}</Card.Footer>
+                            <Card.Text>Nombre : {filtrado.title}</Card.Text>
+                            <Card.Header>Descripcion: {description} </Card.Header>
+                            <Card.Img src={pictureUrl}></Card.Img>
                         </Card>
                     </Col>
                 </Row>
