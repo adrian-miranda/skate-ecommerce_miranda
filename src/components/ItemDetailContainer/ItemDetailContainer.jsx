@@ -20,7 +20,6 @@ export const ItemDetailContainer = ()=>{
         .then((respuesta)=> setDetailProducto(respuesta))
         .catch((error)=> console.log(error))
     } , [])
-
     const filtrado = detailProducto.filter((filtro) => filtro.id === 3).map(filtrado => ( <ItemDetail key={filtrado.id} filtrado={filtrado} /> ) )
     console.log(filtrado)
     const objetoFiltrado = detailProducto.filter((filtro) => filtro.id === 3)
@@ -31,4 +30,3 @@ export const ItemDetailContainer = ()=>{
         </>
     )
 }
-
