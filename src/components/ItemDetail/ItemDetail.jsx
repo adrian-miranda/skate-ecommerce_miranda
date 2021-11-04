@@ -1,7 +1,13 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 export const ItemDetail = ({filtrado})=>{
-    const {id , title, description , price , stock , pictureUrl} = filtrado
+    const {
+        // id, 
+        // title, 
+        description, 
+        // price, 
+        // stock, 
+        pictureUrl} = filtrado
     return(
         <>  
             <h1>Detalle del Producto</h1>
@@ -11,7 +17,7 @@ export const ItemDetail = ({filtrado})=>{
                         <Card className="tarjeta">
                             <Card.Footer>Id: {filtrado.id}</Card.Footer>
                             <Card.Text>Nombre : {filtrado.title}</Card.Text>
-                            <Card.Text>Precio : ${filtrado.price}</Card.Text>
+                            <Card.Text>Nombre : ${filtrado.price}</Card.Text>
                             <Card.Header>Descripcion: {description} </Card.Header>
                             <Card.Img src={pictureUrl}></Card.Img>
                         </Card>

@@ -3,7 +3,7 @@ import { BrowserRouter , Switch , Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/navbar/navbar.css';
-import { Inicio } from  './components/Inicio/Inicio'
+// import { Inicio } from  './components/Inicio/Inicio'
 import { NavBar } from './components/navbar/navbar';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
