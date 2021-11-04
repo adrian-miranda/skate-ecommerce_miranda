@@ -13,7 +13,7 @@ export const ItemDetailContainer = ()=>{
             }else{
                 reject('No hay detalle')
             }
-        }, 2000 )
+        }, 5000 )
     });
     useEffect(()=>{
         getItem(Productos)
