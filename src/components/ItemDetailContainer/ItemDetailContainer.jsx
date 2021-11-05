@@ -22,8 +22,8 @@ export const ItemDetailContainer = ()=>{
     } , [])
     const filtrado = detailProducto.filter((filtro) => filtro.id === 3).map(filtrado => ( <ItemDetail key={filtrado.id} filtrado={filtrado} /> ) )
     console.log(filtrado)
-    const objetoFiltrado = detailProducto.filter((filtro) => filtro.id === 3)
-    console.log(objetoFiltrado)
+    // const objetoFiltrado = detailProducto.filter((filtro) => filtro.id === 3)
+    // console.log(objetoFiltrado)
     return(
         <>
             {filtrado}

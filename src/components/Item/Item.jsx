@@ -1,4 +1,5 @@
 import {Card} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import './Item.css'
 // import { ItemCount } from '../ItemCount/ItemCount'
 // import { ItemDetailContainer } from '../ItemDetailContainer/ItemDetailContainer'
@@ -15,11 +16,9 @@ export const Item = ({stock , id , title , price , description , pictureUrl}) =>
                     <Card.Img variant="top" src={pictureUrl} alt="aca va la foto" className="imagen"/>
                     <Card.Body>
                     {/* <ItemCount stock={stock}/> */}
-                    <button>
-                        <a href="{#}">Ver detalle de producto</a>
-                        {/* <a href={<ItemDetailContainer />}>Ver Detalle del producto</a> */}
-                        {/* <a href={direccion}>Ver Detalle del producto</a> */}
-                    </button>
+                    <Link to={`/item/${id}`}>
+                        <button>Ver detalle de producto</button>
+                    </Link>
                     <Card.Footer>Stock Disponible: {stock}</Card.Footer>
                     </Card.Body>
                 </Card>
