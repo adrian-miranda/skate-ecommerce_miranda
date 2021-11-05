@@ -2,6 +2,7 @@ import './ItemList.css';
 import { Item } from '../Item/Item';
 
 export const ItemList = ({productos}) =>{
+    console.log(productos)
     return(
         <>
         {productos.length ? productos.map((producto) => (
@@ -10,4 +11,4 @@ export const ItemList = ({productos}) =>{
             </>
             )
         }
-        // console.log(Productos)
+        

@@ -5,7 +5,6 @@ import './Item.css'
 // import { ItemDetailContainer } from '../ItemDetailContainer/ItemDetailContainer'
 
 export const Item = ({stock , id , title , price , description , pictureUrl}) =>{
-    // const direccion = `/detalle/${id}`
     return(
             <>
                 <Card className="col-md-10 col-lg-3 tarjeta">

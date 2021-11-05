@@ -19,7 +19,7 @@ export const ItemDetail = ({filtrado})=>{
                             <Card.Text>Nombre : {filtrado.title}</Card.Text>
                             <Card.Text>Nombre : ${filtrado.price}</Card.Text>
                             <Card.Header>Descripcion: {description} </Card.Header>
-                            <Card.Img src={pictureUrl}></Card.Img>
+                            <Card.Img src={pictureUrl} alt="aca va la ima"></Card.Img>
                         </Card>
                     </Col>
                 </Row>
