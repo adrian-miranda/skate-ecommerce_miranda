@@ -7,6 +7,7 @@ import { Inicio } from  './components/Inicio/Inicio'
 import { NavBar } from './components/navbar/navbar';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
+import { Cart } from './components/Cart/Cart';
 
 function App() {
   return (
@@ -27,6 +28,11 @@ function App() {
       <Switch>
         <Route exact path="/item/:id">
           <ItemDetailContainer  />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route exact path="/cart">
+          <Cart  />
         </Route>
       </Switch>
     </BrowserRouter>
