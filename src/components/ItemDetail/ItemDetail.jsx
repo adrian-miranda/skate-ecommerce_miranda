@@ -4,15 +4,11 @@ import { NavLink } from 'react-router-dom';
 import { ItemCount } from '../ItemCount/ItemCount';
 
 export const ItemDetail = ({filtrado})=>{
-    const {
-        // id, 
-        // title, 
+    const {// id, // title, 
         description, 
-        // price, 
-        // stock, 
+        // price, // stock, 
         pictureUrl} = filtrado
-    
-    
+
     const [contador, setContador] = useState(0);
     const agregar = () =>{
         if(contador < filtrado.stock){

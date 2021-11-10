@@ -4,8 +4,9 @@
         "title" : "Tablas",
         "description" : "Tabla SantaCruz",
         "price" : 67000,
-        "stock" : 0,
-        "pictureUrl": "/images/skate_table.jpg"
+        "stock" : 5,
+        "pictureUrl": "/images/skate_table.jpg",
+        "categoryId" : 1 
     },
     {
         "id" : 2,
@@ -13,38 +14,43 @@
         "description" : "Trucks Element",
         "price" : 25000,
         "stock" : 3,
-        "pictureUrl": "/images/trucks.jpg"
+        "pictureUrl": "/images/trucks.jpg",
+        "categoryId" : 2
     },
     {
         "id" : 3,
         "title" : "Ruedas",
         "description" : "Ruedas de silicona Maple",
         "price" : 20000,
-        "stock" : 3,
-        "pictureUrl": "/images/ruedas.jpg"
+        "stock" : 0,
+        "pictureUrl": "/images/ruedas.jpg",
+        "categoryId" : 3
     },
     {
         "id" : 4,
         "title" : "Rodamientos",
         "description" : "Rodamientos Avec 3",
         "price" : 11000,
-        "stock" : 3,
-        "pictureUrl": "/images/rodamientos.jpg"
+        "stock" : 6,
+        "pictureUrl": "/images/rodamientos.jpg",
+        "categoryId" : 4
     },
     {
         "id" : 5,
         "title" : "Tornillos",
         "description" : "Tornillos American Screw",
         "price" : 6000,
-        "stock" : 3,
-        "pictureUrl": "/images/tornillos.jpg"
+        "stock" : 11,
+        "pictureUrl": "/images/tornillos.jpg",
+        "categoryId" : 5
     },
     {
         "id" : 6,
         "title" : "Lijas",
         "description" : "Lijas Powell",
         "price" : 7000,
-        "stock" : 3,
-        "pictureUrl": "/images/lija.jpg"
+        "stock" : 8,
+        "pictureUrl": "/images/lija.jpg",
+        "categoryId" : 6
     }
 ]

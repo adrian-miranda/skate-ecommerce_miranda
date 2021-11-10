@@ -6,7 +6,7 @@ export const ItemList = ({productos}) =>{
     return(
         <>
         {productos.length ? productos.map((producto) => (
-            <Item key={producto.id} stock={producto.stock} id={producto.id} title={producto.title} description={producto.description} price={producto.price} pictureUrl={producto.pictureUrl} />
+            <Item key={producto.id} stock={producto.stock} id={producto.id} title={producto.title} description={producto.description} price={producto.price} pictureUrl={producto.pictureUrl} categoryId={producto.categoryId} />
             )) : <h1>Cargando Catalogo</h1>}
             </>
             )
