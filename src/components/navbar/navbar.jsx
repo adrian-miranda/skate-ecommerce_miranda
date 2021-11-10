@@ -7,7 +7,8 @@ import Productos from '../../Productos.json'
 
 export const NavBar = () => {
     const objetos = Productos
-    const recorridos = objetos.map((objeto)=>{return <li><NavLink to={`/categories/${objeto.categoryId}`}>{objeto.title}</NavLink></li>});
+    // const recorridos = objetos.map((objeto)=>{return <li><NavLink to={`/categories/${objeto.categoryId}`}>{objeto.title}</NavLink></li>});
+    const recorridos = objetos.map((objeto)=>{return <li><NavLink to={`/categories/${objeto.categoryIdTxt}`}>{objeto.title}</NavLink></li>});
     return(
         <div className="NavBar">
             <NavLink to={`/`}><img src={logoTienda} alt="imagen_logo" className='logoTienda'/></NavLink>

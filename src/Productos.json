@@ -6,6 +6,7 @@
         "price" : 67000,
         "stock" : 5,
         "pictureUrl": "/images/skate_table.jpg",
+        "categoryIdTxt" : "tablas",
         "categoryId" : 1 
     },
     {
@@ -15,6 +16,7 @@
         "price" : 25000,
         "stock" : 3,
         "pictureUrl": "/images/trucks.jpg",
+        "categoryIdTxt" : "trucks",
         "categoryId" : 2
     },
     {
@@ -24,6 +26,7 @@
         "price" : 20000,
         "stock" : 0,
         "pictureUrl": "/images/ruedas.jpg",
+        "categoryIdTxt" : "ruedas",
         "categoryId" : 3
     },
     {
@@ -33,6 +36,7 @@
         "price" : 11000,
         "stock" : 6,
         "pictureUrl": "/images/rodamientos.jpg",
+        "categoryIdTxt" : "rodamientos",
         "categoryId" : 4
     },
     {
@@ -42,6 +46,7 @@
         "price" : 6000,
         "stock" : 11,
         "pictureUrl": "/images/tornillos.jpg",
+        "categoryIdTxt" : "tornillos",
         "categoryId" : 5
     },
     {
@@ -51,6 +56,7 @@
         "price" : 7000,
         "stock" : 8,
         "pictureUrl": "/images/lija.jpg",
+        "categoryIdTxt" : "lijas",
         "categoryId" : 6
     }
 ]

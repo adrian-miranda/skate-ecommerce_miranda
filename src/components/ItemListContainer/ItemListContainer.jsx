@@ -7,7 +7,7 @@ import Productos from '../../Productos.json'
 import { useParams } from 'react-router';
 
 export const ItemListContainer = () => {
-    const {categoryId} = useParams();
+    const {categoryIdTxt} = useParams();
     const [productos , setProductos] = useState([]);
     const cargaCatalogo = (data) => 
     new Promise((resolve , reject) =>{
@@ -21,11 +21,12 @@ export const ItemListContainer = () => {
     });
     useEffect(()=>{
         cargaCatalogo(Productos)
-        .then((respuesta)=> categoryId ? setProductos(respuesta.filter(producto => parseInt(producto.categoryId) === parseInt(categoryId))) : setProductos(respuesta))
+        // .then((respuesta)=> categoryId ? setProductos(respuesta.filter(producto => parseInt(producto.categoryId) === parseInt(categoryId))) : setProductos(respuesta))
+        .then((respuesta)=> categoryIdTxt ? setProductos(respuesta.filter(producto => producto.categoryIdTxt === categoryIdTxt)) : setProductos(respuesta))
         .catch((error)=> console.log(error));
-        console.log('la categoria es',categoryId)
-        console.log('los productos son',productos)
-    }, [categoryId]);
+        console.log('la categoria es',categoryIdTxt)
+        console.log('los productos son',categoryIdTxt)
+    }, [categoryIdTxt]);
     return(
         <>
             <Container fluid>

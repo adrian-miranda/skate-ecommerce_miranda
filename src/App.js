@@ -21,7 +21,8 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route exact path="/categories/:categoryId">
+        {/* <Route exact path="/categories/:categoryId"> */}
+        <Route exact path="/categories/:categoryIdTxt">
           <ItemListContainer  />
         </Route>
       </Switch>
