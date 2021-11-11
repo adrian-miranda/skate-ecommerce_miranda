@@ -2,7 +2,7 @@ import { Container, Row , Col , Stack} from "react-bootstrap"
 import {useState} from 'react'
 import './ItemCount.css'
 
-export const ItemCount = ({stock = 0 , initial = 1}) =>{
+export const ItemCount = ({stock = 0 , initial = 0 , onAdd}) =>{
 
     const [count, setCount] = useState(initial);
     const agregar = () =>{
@@ -29,11 +29,11 @@ export const ItemCount = ({stock = 0 , initial = 1}) =>{
                     <Col >
                         <Stack direction="horizontal" gap={3} className="botonera">
                             <div className="contador">
-                            <button onClick={restar}>-1</button>
-                            <p className="numero">{count}</p>
-                            <button onClick={agregar}>+1</button>
+                            <button onClick={restar}> -1 </button>
+                            <p className="numero"> {count} </p>
+                            <button onClick={agregar}> +1 </button>
                             </div>
-                            <button >Agregar al carrito</button>
+                            <button onClick={()=> {onAdd(count)}}>Agregar al carrito</button>
                             <p>Stock disponible : {stock}</p>
                         </Stack>
                     </Col>
@@ -42,6 +42,3 @@ export const ItemCount = ({stock = 0 , initial = 1}) =>{
         </>
     )
 }
-    // bajo la linea 7
-    // const agregar = () => setCount(count+1)
-    // const restar = () => setCount(count-1)

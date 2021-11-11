@@ -4,28 +4,18 @@ import { NavLink } from 'react-router-dom';
 import { ItemCount } from '../ItemCount/ItemCount';
 
 export const ItemDetail = ({filtrado})=>{
-    const {// id, // title, 
-        description, 
-        // price, // stock, 
-        pictureUrl} = filtrado
+    const { id,  title, description,  price,  stock, pictureUrl} = filtrado
 
-    const [contador, setContador] = useState(0);
-    const agregar = () =>{
-        if(contador < filtrado.stock){
-            setContador(contador + 1 );
-            
-        }else{
-            alert('no puedes agregar mas')
-        }
+    const [cantidad, setCantidad] = useState(0);
+    const [componente, setComponente] = useState(true);
+    
+    const agregarCarrito = (itemsAgregados) => {
+        setCantidad(itemsAgregados);
+        setComponente(false);
+        filtrado.stock-=itemsAgregados;
     }
-    const quitar = () =>{
-        if(contador === 0){
-            alert('no puedes restar elementos')
-        }else{
-            setContador(contador - 1);
-        }
-    }
-    const resumen = (filtrado.stock - contador)
+    console.log('cantidad seleccionada' ,cantidad)
+    console.log('componente' ,componente)
     return(
         <>  
             <h1>Detalle del Producto</h1>
@@ -33,15 +23,12 @@ export const ItemDetail = ({filtrado})=>{
                 <Row>
                     <Col>
                         <Card className="tarjeta">
-                            <Card.Footer>Id: {filtrado.id}</Card.Footer>
-                            <Card.Text>Nombre : {filtrado.title}</Card.Text>
-                            <Card.Text>Nombre : ${filtrado.price}</Card.Text>
+                            <Card.Footer>Id: {id}</Card.Footer>
+                            <Card.Text>Nombre : {title}</Card.Text>
+                            <Card.Text>Nombre : ${price}</Card.Text>
                             <Card.Header>Descripcion: {description} </Card.Header>
                             <Card.Img src={pictureUrl} alt="aca va la imagen"></Card.Img>
-                            <ItemCount stock={resumen} />
-                            <p>cantidad seleccionada : {contador}</p>
-                            <button onClick={agregar}>Agregar Producto</button>
-                            <button onClick={quitar}>Restar Producto</button>
+                            {<ItemCount stock={stock} onAdd={agregarCarrito} />} 
                             <NavLink to={`/Cart`}><button>Terminar mi compra</button></ NavLink>
                         </Card>
                     </Col>
