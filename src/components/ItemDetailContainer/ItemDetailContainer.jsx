@@ -28,8 +28,6 @@ const itemId =parseInt(id);
     } , [])
     const filtrado = detailProducto.filter((filtro) => filtro.id === itemId).map(filtrado => ( <ItemDetail key={filtrado.id} filtrado={filtrado} /> ) )
     console.log(filtrado)
-    // const objetoFiltrado = detailProducto.filter((filtro) => filtro.id === 3)
-    // console.log(objetoFiltrado)
     return(
         <>
             {filtrado}

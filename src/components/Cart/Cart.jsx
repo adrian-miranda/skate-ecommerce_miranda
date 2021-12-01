@@ -1,3 +1,8 @@
+import { ItemDetailContainer } from "../ItemDetailContainer/ItemDetailContainer"
+
+
 export const Cart = ()=>{
-    return <h1>Este es el carrito</h1>
+    const {filtrado} = ItemDetailContainer
+    console.log(filtrado)
+    return <h1>Este es el carrito {filtrado} </h1>
 }
