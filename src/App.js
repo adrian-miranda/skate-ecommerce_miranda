@@ -8,11 +8,10 @@ import { NavBar } from './components/navbar/navbar';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import { Cart } from './components/Cart/Cart';
-import { ProductProvider } from './context/ProductsContext';
-
+import {CartProvider} from './context/CartContext'
 function App() {
   return (
-    <ProductProvider>
+    <CartProvider>
       <div className="App">
         <BrowserRouter>
           <NavBar />
@@ -40,7 +39,7 @@ function App() {
           </Switch>
         </BrowserRouter>
       </div>
-    </ProductProvider>
+    </CartProvider>
   );
 }
 export default App;
